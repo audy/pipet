@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/pipet.rb",
+    "pipet.gemspec",
     "readme.md",
     "spec/.pipet_spec.rb.swp",
     "spec/pipet_spec.rb",
