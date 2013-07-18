@@ -19,8 +19,10 @@ nt.fasta located in ~/.pipet/ncbi/nt.fasta
 
 ## Installation
 
-   # on most 'nix systems
-   (sudo) gem install pipet
+```
+# on most 'nix systems
+(sudo) gem install pipet
+```
 
 # Copyright
 
