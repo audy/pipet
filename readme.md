@@ -11,7 +11,7 @@ darwin@beagle> pipet list
 ncbi/nt
 
 # Download a database
-darwin@beagle> pipet pull ncbi/nt.fasta
+darwin@beagle> pipet pull ncbi/nt
 Downloading ncbi/nt.fasta from ftp://ftp.ncbi.nih.gov/blast/db/fasta/nt.gz
 Success!
 ```
