@@ -19,4 +19,8 @@ describe Database do
     test_db.validate.should_not be_false
   end
 
+  it '#all returns a list of all classes that inherited from Database' do
+    Database.all.include?(test_db).should be_true
+  end
+
 end
