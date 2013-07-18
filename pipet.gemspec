@@ -12,16 +12,22 @@ Gem::Specification.new do |s|
   s.date = "2013-07-18"
   s.description = "Pipet is a package manager for bioinformatics databases that allows users to easily retrieve databases from their sources using the command line. Pipet also checks for database integrity via checksum"
   s.email = "harekrishna@gmail.com"
+  s.executables = ["pipet"]
+  s.extra_rdoc_files = [
+    "LICENSE.txt"
+  ]
   s.files = [
     ".rspec",
     ".rvmrc",
     "Gemfile",
+    "LICENSE.txt",
     "Rakefile",
     "VERSION",
+    "bin/pipet",
     "lib/pipet.rb",
+    "lib/pipet/cli.rb",
     "pipet.gemspec",
     "readme.md",
-    "spec/.pipet_spec.rb.swp",
     "spec/pipet_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -35,15 +41,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["= 2.14.1"])
       s.add_development_dependency(%q<bundler>, ["= 1.3.5"])
       s.add_development_dependency(%q<jeweler>, ["= 1.8.6"])
     else
+      s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<rspec>, ["= 2.14.1"])
       s.add_dependency(%q<bundler>, ["= 1.3.5"])
       s.add_dependency(%q<jeweler>, ["= 1.8.6"])
     end
   else
+    s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<rspec>, ["= 2.14.1"])
     s.add_dependency(%q<bundler>, ["= 1.3.5"])
     s.add_dependency(%q<jeweler>, ["= 1.8.6"])
