@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "pipet"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Austin Richardson"]
@@ -22,12 +22,18 @@ Gem::Specification.new do |s|
     "Gemfile",
     "LICENSE.txt",
     "Rakefile",
+    "Sources/ncbi_nt.rb",
     "VERSION",
     "bin/pipet",
+    "lib/database.rb",
+    "lib/database_dsl.rb",
     "lib/pipet.rb",
     "lib/pipet/cli.rb",
+    "lib/pipet/tasks/list.rb",
+    "lib/pipet/tasks/pull.rb",
     "pipet.gemspec",
     "readme.md",
+    "spec/database_spec.rb",
     "spec/pipet_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -45,17 +51,20 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, ["= 2.14.1"])
       s.add_development_dependency(%q<bundler>, ["= 1.3.5"])
       s.add_development_dependency(%q<jeweler>, ["= 1.8.6"])
+      s.add_development_dependency(%q<pry>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<rspec>, ["= 2.14.1"])
       s.add_dependency(%q<bundler>, ["= 1.3.5"])
       s.add_dependency(%q<jeweler>, ["= 1.8.6"])
+      s.add_dependency(%q<pry>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<rspec>, ["= 2.14.1"])
     s.add_dependency(%q<bundler>, ["= 1.3.5"])
     s.add_dependency(%q<jeweler>, ["= 1.8.6"])
+    s.add_dependency(%q<pry>, [">= 0"])
   end
 end
 
