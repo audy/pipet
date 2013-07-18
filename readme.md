@@ -42,7 +42,7 @@ end
 
 See `Sources/` for examples.
 
-## Porquoi?
+## Pourquoi?
 
 1. I got tired of having to hunt for databases and thought it would be
 useful to store their locations and md5 checksums all in one place.
