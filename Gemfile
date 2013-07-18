@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'thor'
 
 group :development do
   gem 'rspec', '2.14.1'
