@@ -1,16 +1,26 @@
 # Pipet
 
-Bioinformatics Database "Package Manager"
-
+Bioinformatics Database "Package Manager".
 
 ## Example Usage
 
 ```bash
+
+# List avaiable databases
+darwin@beagle> pipet list
+ncbi/nt
+
+# Download a database
 darwin@beagle> pipet pull ncbi/nt.fasta
 Downloading ncbi/nt.fasta from ftp://ftp.ncbi.nih.gov/blast/db/fasta/nt.gz
 Success!
 nt.fasta located in ~/.pipet/ncbi/nt.fasta
 ```
+
+## Installation
+
+   # on most 'nix systems
+   (sudo) gem install pipet
 
 # Copyright
 
