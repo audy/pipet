@@ -14,7 +14,6 @@ ncbi/nt
 darwin@beagle> pipet pull ncbi/nt.fasta
 Downloading ncbi/nt.fasta from ftp://ftp.ncbi.nih.gov/blast/db/fasta/nt.gz
 Success!
-nt.fasta located in ~/.pipet/ncbi/nt.fasta
 ```
 
 ## Installation
