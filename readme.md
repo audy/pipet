@@ -46,11 +46,14 @@ See `Sources/` for examples.
 
 1. I got tired of having to hunt for databases and thought it would be
 useful to store their locations and md5 checksums all in one place.
+
 2. Most bioinformatics databases do not use any sort of versioning which
 hinders reproducibility of computation experiments.  Pipet uses a
 combination of MD5 checksums and Git which allows for a type of
 versioning (the original database may no longer be available on the web
 but at least we can tell).
+
+3. [Homebrew](http://github.com/mxcl/homebrew) made my life pretty awesome.
 
 # Copyright
 
