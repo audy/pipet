@@ -1,5 +1,4 @@
-require 'bundler'
-Bundler.require
+require 'thor'
 
 %w{database database_dsl}.each do |f|
   require File.join(File.dirname(__FILE__), "#{f}.rb")
